@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Varun Mistry - Portfolio</title>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-dark text-light bg-body-tertiary">
@@ -22,10 +25,10 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#education">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -34,9 +37,9 @@
             </div>
         </nav>
 
-        <section id="about" class="container my-5">
-            <div class="intro">
-                <div class="row w-100">
+        <div class="container my-5 p-5">
+            <div class="p-5 text-center rounded-3">
+                <div class="row w-100 p-5">
                     <!-- Left section with profile image -->
                     <div class="col-md-4 d-flex justify-content-center">
                         <img src="profile_pic.jpg" alt="Profile Image" class="profile-image">
@@ -44,59 +47,174 @@
                     <!-- Right section with text -->
                     <div class="col-md-8 text-section">
                         <h1>Varun Mistry</h1>
-                        <p>Welcome to my personal webpage. Here you can find information about me, my interests, and my work. Feel free to explore and get to know me better!</p>
+                        <p class="lead mb-4">Welcome to my personal webpage. Here you can find information about me, my interests, and my work. Feel free to explore and get to know me better!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-example-divider"></div>
+        
+        <!-- About section -->
+        <section id="about" class="container my-5">
+            <div class="px-4 py-5 my-5 text-center">
+                <h2 class="display-6 text-body-emphasis">About me</h2>
+                <div class="col-lg-6 mx-auto">
+                  <p class="lead mb-4">I am a first M.Tech student pursuing Computer Science and Engineering at International Institute of Information Technology, Hyderabad. I have completed my B.Tech in CSE from University of Mumbai.
+                    I am excited to learn about machine learning and distributed systems.
+                  </p>
+                </div>
+              </div>
+        </section>
+
+        <div class="b-example-divider"></div>
+        <!-- Education Section -->
+        <section id="education" class="container my-5">
+            <h2 class="display-6 text-body-emphasis text-center">Education</h2>
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <ul class="timeline">
+                            <li>
+                                <h5 class="lead text-body-emphasis">M.Tech Computer Science and Engineering (Exp. 2026)</h5>
+                                <p class="text-muted"><i>International Institute of Information Technology, Hyderabad</i></p>
+                            </li>
+                            <li>
+                                <h5 class="lead text-body-emphasis">B.Tech Computer Engineering (2018)</h5>
+                                <div class="text-muted"><i>University of Mumbai</i><p class="text-right">8.37 / 10</p></div>
+                            </li>
+                            <li>
+                                <h5 class="lead text-body-emphasis">XII Intermediate (2014)</h5>
+                                <div class="text-muted"><i>Maharashtra State Board</i><p class="text-right">92.77 %</p></div>
+                            </li>
+                            <li>
+                                <h5 class="lead text-body-emphasis">X Matriculate (2012)</h5>
+                                <div class="text-muted"><i>Maharashtra State Board</i><p class="text-right">93.27 %</p></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="b-example-divider"></div>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container my-5">
+            <h2 class="display-6 text-body-emphasis text-center">Projects</h2>
+            
+            <div class="container px-4 py-5">
+                <h2 class="pb-2 border-bottom">Activity Recognition 
+                    <a href="https://github.com/varunmistry11/activity-recognition"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                      </svg>
+                    </a>
+                </h2>
+            
+                <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                    <div class="col d-flex flex-column align-items-start gap-2">
+                        <h2 class="fw-bold text-body-emphasis">Human Activity Recognition in Video Surveillance</h2>
+                        <p class="text-body-secondary">Classify human activity in video into various benign and harmful activities such as walking, kicking, snatching,
+                            vaulting, etc.</p>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="row row-cols-1 row-cols-sm-2 g-4">
+                            <div class="col d-flex flex-column gap-2">
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Pose Detection</h4>
+                                <p class="text-body-secondary">Used human pose detection to identify and track the human body in video frames.</p>
+                            </div>
+                            <div class="col d-flex flex-column gap-2">
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Activity Recognition</h4>
+                                <p class="text-body-secondary">Performed activity recognition using SVMs, neural networks, RNNs.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="px-4 py-5 my-5 text-center">
-                <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-                <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
-                <div class="col-lg-6 mx-auto">
-                  <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-                  </div>
+            <div class="container px-4 py-5">
+                <h2 class="pb-2 border-bottom">Puzzle 8 Android App 
+                    <a href="https://github.com/varunmistry11/puzzle-8-solver"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                      </svg>
+                    </a>
+                </h2>
+            
+                <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                    <div class="col d-flex flex-column align-items-start gap-2">
+                        <h2 class="fw-bold text-body-emphasis">Puzzle 8 Solver Android App</h2>
+                        <p class="text-body-secondary">Android simulation of the well known Puzzle 8 game.</p>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="row row-cols-1 row-cols-sm-2 g-4">
+                            <div class="col d-flex flex-column gap-2">
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Create Puzzle</h4>
+                                <p class="text-body-secondary">Capture image using camera and create a puzzle.</p>
+                            </div>
+                            <div class="col d-flex flex-column gap-2">
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">A* Solver</h4>
+                                <p class="text-body-secondary">Solve puzzle in optimal number of steps by implementing A* algorithm.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
 
-            <h2 class="text-center">About Me</h2>
-            <p>Your story, hobbies, and background go here. Make it engaging and personal.</p>
-        </section>
-    
-        <!-- Projects Section -->
-        <section id="projects" class="container my-5">
-            <h2 class="text-center">Projects</h2>
-            <p>Showcase your projects here with links and descriptions. You can use Bootstrap cards for a nicer layout.</p>
-        </section>
-    
-        <!-- Education Section -->
-        <section id="education" class="container my-5">
-            <h2 class="text-center">Education</h2>
-            <p>List your educational background here.</p>
+            <div class="container px-4 py-5">
+                <h2 class="pb-2 border-bottom">Practical Submission
+                    <a href="https://github.com/varunmistry11/pracsubmission"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                      </svg>
+                    </a>
+                </h2>
+            
+                <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                    <div class="col d-flex flex-column align-items-start gap-2">
+                        <h2 class="fw-bold text-body-emphasis">Assignment Submission Website</h2>
+                        <p class="text-body-secondary">Website for Practical Submission and Evaluation.</p>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="row row-cols-1 row-cols-sm-2 g-4">
+                            <div class="col d-flex flex-column gap-2">
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Assignment Creation</h4>
+                                <p class="text-body-secondary">Teachers can create assignment and evaluate submissions and grade them.</p>
+                            </div>
+                            <div class="col d-flex flex-column gap-2">
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Practical Submission</h4>
+                                <p class="text-body-secondary">Students can view assignments announced, make submissions and view grades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     
         <!-- Contact Section -->
         <section id="contact" class="container my-5">
-            <h2 class="text-center">Contact</h2>
+            <h2 class="display-6 text-body-emphasis text-center">Contact</h2>
             <p class="text-center">Find me on:</p>
             <div class="text-center">
-                <a href="https://github.com/yourusername" class="btn btn-dark mx-2">GitHub</a>
-                <a href="https://www.linkedin.com/in/yourusername" class="btn btn-primary mx-2">LinkedIn</a>
-                <!-- Add more social media buttons if needed -->
+                <a href="mailto:varunmistry11@gmail.com" class="btn btn-primary mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-inbox" viewBox="0 0 16 16">
+                        <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z"/>
+                      </svg>
+                </a>
+                <a href="https://github.com/varunmistry11" class="btn btn-dark mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                      </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/varun-mistry-838404115/" class="btn btn-primary mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                      </svg>
+                </a>
             </div>
         </section>
-
-        picture 
-        About your story 
-        hobbies 
-        projects 
-        Educational background
-
-        Social media 
-        github email linkedin
-
         <footer class="text-center bg-dark text-light py-3">
             <p>&copy; 2024 Varun Mistry. All rights reserved.</p>
         </footer>
