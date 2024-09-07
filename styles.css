@@ -1,0 +1,40 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.text-section {
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+}
